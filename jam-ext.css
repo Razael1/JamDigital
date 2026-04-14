@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kotak-jam {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px 60px;
+    border-radius: 25px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    min-width: 350px;
+}
+
+#tanggal {
+    font-size: 24px;
+    font-weight: 300;
+    color: #666;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#jam {
+    font-size: 64px;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 480px) {
+    .kotak-jam {
+        padding: 30px 40px;
+        min-width: 280px;
+    }
+    
+    #tanggal {
+        font-size: 20px;
+    }
+    
+    #jam {
+        font-size: 48px;
+    }
+}
